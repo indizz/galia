@@ -1,0 +1,51 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+} /*меняем модел на box-sizing: border-box */
+
+ul[class],
+ol[class] { /*обнуляем padding у всех ul и ol с классами */
+    padding:0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; /*обнуляем внешний отступ у этих элементов */
+}
+
+ul[class] {
+  list-style: none; /*убираем маркеты перед элементами списка*/
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a{
+    text-decoration: none;
+}
